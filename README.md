@@ -65,6 +65,8 @@ python tools/benchmark_watch.py
 
 ## 评测结果（Net4n6Bench，IDS-25 公平口径：GT 缺失字段不评分）
 
+![Accuracy v1 vs v1.1](docs/charts/accuracy-comparison.svg)
+
 | 指标 | v1 基线 | v1.1（技能调优后） |
 |---|---|---|
 | service 准确率 | 60% | **80%** |
@@ -74,7 +76,9 @@ python tools/benchmark_watch.py
 | 四字段全中 | 1/25 | **4/25** |
 | verdict 解析率 | 21/25 | **23/25** |
 
-调优方式：不换模型、不加工具，仅通过**技能 Checklist + 评测提示词**两处最小改动（同族 CVE 区分、service 粒度、outcome 证据强度、输出格式约束、解析失败重跑、非 HTTP 协议提示）。逐事件 diff 与失败案例分析见评测报告。
+调优方式：不换模型、不加工具，仅通过**技能 Checklist + 评测提示词**两处最小改动（同族 CVE 区分、service 粒度、outcome 证据强度、输出格式约束、解析失败重跑、非 HTTP 协议提示）。
+
+📊 **完整图表对比与深度分析见 [BENCHMARK.md](BENCHMARK.md)**（5 张图：四字段对比 / 命中分布 / outcome 判定 / 残留失败 / 类别对比）。
 
 ## 已知限制
 
