@@ -1,0 +1,21 @@
+# 第三方依赖（本地部署，不入库）
+deepseek-harness-master/
+deepseek-harness-master.zip
+node_modules/
+
+# 可再生成的数据与结果（脚本可自动拉取/生成）
+benchmark/
+testdata/
+reports/eval/
+tools/eval_net4n6bench.py
+
+# Kun 画布状态（本机工具数据）
+.kun-canvas/
+
+# Python
+__pycache__/
+*.pyc
+
+# 本地运行时
+.dsh-build/
+*.log
