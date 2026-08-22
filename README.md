@@ -80,6 +80,8 @@ python tools/benchmark_watch.py
 
 📊 **完整图表对比与深度分析见 [BENCHMARK.md](BENCHMARK.md)**（5 张图：四字段对比 / 命中分布 / outcome 判定 / 残留失败 / 类别对比）。
 
+🧭 **做 Agent 项目的可复用方法论见 [docs/AGENT-PLAYBOOK.md](docs/AGENT-PLAYBOOK.md)**（八阶段流程 + 踩坑解法 + 速查清单）。
+
 ## 已知限制
 
 - 面向 Windows + DeepSeek API；dsh 的 Python SDK 不支持 Windows（官方仅 Linux/macOS）
